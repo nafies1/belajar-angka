@@ -1,5 +1,5 @@
 	
-function masukGame() {
+function masukBelajar() {
 	var player = prompt('Masukkan nama Kamu :');
 
 	var body = document.body;
@@ -32,15 +32,17 @@ function masukGame() {
 		divAngka.setAttribute('id', 'angka');
 		body.appendChild(divAngka);		
 
-			var divButton = [];
+			var divAnchor = [];
+			var divImg = [];
 			for (var i = 0; i < 10; i++) {
-				divButton.push(document.createElement('button'));
+				divAnchor.push(document.createElement('a'));
 				var indeks = i + 1;
-				divButton[i].setAttribute('id', `${indeks}`);
+				divAnchor[i].setAttribute('id', `${indeks}`);
 				// divButton[i].setAttribute('onClick', `pembanding(${indeks}, ${nomor}, ${nilai})`);
-				divButton[i].setAttribute('onClick', `suara${indeks}.play()`);
-				divAngka.appendChild(divButton[i]);
-				divButton[i].innerHTML = `${indeks}`;		
+				divAnchor[i].setAttribute('onClick', `suara${indeks}.play()`);
+				divAngka.appendChild(divAnchor[i]);
+				divAnchor[i].innerHTML = `<img src="img/0${indeks}.png" style="width: 104px; height: 160px" display="inline-block">`;		
+
 			}
 
 		var divReset = document.createElement('div');
