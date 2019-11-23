@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Angka</title>
+</head>
+<body>
+	<h1>Game Mengenal Angka</h1>
+	<div id="data">
+		<div id="nama">Nama : x</div>
+		<div id="score">Score :</div>
+		<button id="dengarkan">Klik untuk dengarkan</button>
+		<div id="lanjut"></div>
+		
+	</div>
+	<div id="angka">
+		<button id="1"></button>
+		<button id="2"></button>
+		<button id="3"></button>
+		<button id="4"></button>
+		<button id="5"></button>
+		<button id="6"></button>
+		<button id="7"></button>
+		<button id="8"></button>
+		<button id="9"></button>
+		<button id="10"></button>
+	</div>
+	<div id="reset">
+		<button>Reset</button>
+	</div>
+	
+	<audio id="myAudio" src="num/02.mp3" preload="auto">
+	</audio>
+
+	<script src="script.js" ></script>
+
+	<a onClick="myAudio.play()"><button type="button">Play</button></a>
+	
+</body>
+</html>
