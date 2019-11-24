@@ -52,6 +52,7 @@ function masukBelajar() {
 			var reset = document.createElement('button');
 			reset.setAttribute('id', `${indeks}`);
 			reset.setAttribute('onClick', 'window.location.reload()');
+			reset.setAttribute('class', "btn btn-primary center")
 			divReset.appendChild(reset);
 			reset.innerHTML = 'Ulangi';	
 			

@@ -1,13 +1,42 @@
 body {
-	background-image: url(img/bg2.png);
+	background-image: url(img/bg3-trp.png);
+	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;}
+
+h1{
+	padding-top: 30px
 }
 
-h1, img {
-	margin: 50px;
+h1, img, #reset, #mulai, #nama {
+	margin: 20px;
+	padding : 5 px;
+	text-shadow: -3px -3px 5px white;
 
+}
+
+#nama{
+	font-size: 20px;
 }
 
 img:hover {
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-
+	box-shadow: -3px -3px 5px white;
 }
+
+img{
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#mulai{
+	width: 200px;
+	height: 60px;
+	opacity: 0.9;
+	font-size: 19pt;
+	color: white;
+	display: inline-block;
+	position: relative;
+	top: 100px;
+}
+
